@@ -5,7 +5,7 @@
 -->
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.txt) <br> <div align="center">
 ![logo](https://i.imgur.com/meQNVfJ_d.webp?maxwidth=640&shape=thumb&fidelity=medium) <br>
-[@Jetrom](https://jeiel.pages.dev)
+[@Jeiel0rbit](https://jeiel.pages.dev)
 
 #
 <div align="center">
@@ -17,20 +17,20 @@
   
 #
 ### Contatos
-0m453xux@duck.com
+7i1dj61y4@mozmail.com
 
 #
 ### Sistema operacional usado atualmente
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Zorin%20OS-0CC1F3?style=for-the-badge&logo=zorin&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/Android%2014-3DDC84?style=for-the-badge&logo=android&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Windows%2010-0078D7?style=for-the-badge&logo=windows&logoColor=white" target="_blank">
 
 #
 ### Experiente em
-<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Zorin%20OS-0CC1F3?style=for-the-badge&logo=zorin&logoColor=white" target="_blank"><img>
+<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Zorin%20OS-0CC1F3?style=for-the-badge&logo=zorin&logoColor=white" target="_blank"><img><img src="https://img.shields.io/badge/openSUSE-73BA25?style=for-the-badge&logo=opensuse&logoColor=white" target="_blank"></img>
 
   </div>
 
-<a href="https://app.daily.dev/jetrom"><img src="https://api.daily.dev/devcards/v2/nVvNsaRGLSPT6rcvCTrnK.png?r=l1y&type=wide" width="652" alt="Jeiel Miranda's Dev Card"/></a>
-  
+<a href="https://app.daily.dev/jeiel0rbit"><img src="https://api.daily.dev/devcards/v2/DRypHCQwDNxABlQsVIPqX.png?type=wide&r=fc4" width="652" alt="Jeiel0rbit's Dev Card"/></a>
+
   <!--
   Fontes:
   
