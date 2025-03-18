@@ -3,223 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título otimizado para SEO (50-60 caracteres) -->
-    <title>Jeiel Lima Miranda | Especialista em Segurança Digital</title>
-    
-    <!-- Meta tags avançadas -->
-    <meta name="description" content="Jeiel Lima Miranda, especialista em Ethical Hacking, DevOps e SOC Analyst. Soluções em segurança digital no Brasil.">
-    <meta name="keywords" content="Jeiel Lima Miranda, segurança digital, ethical hacking, DevOps, SOC Analyst, cibersegurança, Brasil">
-    <meta name="author" content="Jeiel Lima Miranda">
+  <meta name="description" content="Quem é Jeiel Lima Miranda?">
+    <meta name="keywords" content="Jeiel, Jeiel Miranda, Jeiel Lima Miranda">
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph para redes sociais -->
-    <meta property="og:title" content="Jeiel Lima Miranda | Especialista em Segurança Digital">
-    <meta property="og:description" content="Ethical Hacking, DevOps e SOC Analyst. Conheça minhas soluções em cibersegurança!">
-    <meta property="og:image" content="https://jeiel.pages.dev/jeiel.png">
-    <meta property="og:url" content="https://jeielmiranda.is-a.dev/">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@Jeiel_0rbit">
-    <meta name="twitter:title" content="Jeiel Lima Miranda | Especialista em Segurança Digital">
-    <meta name="twitter:description" content="Ethical Hacking, DevOps e SOC Analyst. Soluções em cibersegurança no Brasil.">
-    <meta name="twitter:image" content="https://jeiel.pages.dev/jeiel.png">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://jeiel.pages.dev/jeiel.png" type="image/x-icon">
-    
-    <!-- CSS mantido como estava -->
+    <meta name="author" content="Jeiel Miranda">
+    <title>Jeiel Lima Miranda | Perfil</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilos personalizados -->
     <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #7c3aed;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%);
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
             min-height: 100vh;
-            display: grid;
-            place-items: center;
-            padding: 2rem;
+            padding: 2rem 0;
         }
-        .card {
-            background: white;
-            border-radius: 1.5rem;
-            padding: 2.5rem;
-            width: min(100%, 26rem);
-            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
-            transition: var(--transition);
-            animation: cardEntrance 0.8s ease-out;
-        }
-        .card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            animation: rotate 6s linear infinite;
-            opacity: 0.05;
-        }
-        .card-content {
-            position: relative;
-            z-index: 2;
+        .profile-card {
+            max-width: 600px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         .profile-img {
-            width: 8rem;
-            height: 8rem;
+            width: 150px;
             border-radius: 50%;
-            margin: 0 auto 1.5rem;
-            border: 0.25rem solid white;
-            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-            transition: var(--transition);
+            border: 4px solid #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .profile-img:hover {
-            transform: scale(1.05);
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
         }
-        h1 {
-            font-size: 1.75rem;
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-        .position {
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-        .description {
-            color: #64748b;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            font-size: 0.95rem;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .social-link {
-            width: 2.5rem;
-            height: 2.5rem;
-            background: var(--light);
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            transition: var(--transition);
-            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-        }
-        .social-link:hover {
-            transform: translateY(-0.25rem);
-            background: var(--primary);
-            color: white;
-        }
-        .contact-btn {
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            color: white;
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .contact-btn:hover {
-            transform: translateY(-0.125rem);
-            box-shadow: 0 0.5rem 1rem rgba(37, 99, 235, 0.3);
-        }
-        @keyframes cardEntrance {
-            from {
-                opacity: 0;
-                transform: translateY(2rem) scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-        @keyframes rotate {
-            100% {
-                transform: rotate(360deg);
-            }
+        blockquote {
+            font-style: italic;
+            color: #6c757d;
         }
     </style>
 </head>
 <body>
-    <main class="card">
-        <div class="card-content">
-            <img src="https://jeiel.pages.dev/jeiel.png" alt="Foto de Jeiel Lima Miranda, Especialista em Segurança Digital" class="profile-img">
-            <h1>Jeiel Lima Miranda</h1>
-            <p class="position">Especialista em Segurança Digital</p>
-            <p class="description">
-                Profissional especializado em <strong>Ethical Hacking</strong>, <strong>DevOps</strong> e <strong>SOC Analyst</strong>. Atuo na proteção de sistemas e redes com soluções inovadoras em cibersegurança.
-            </p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/jeiel-lima-miranda" target="_blank" class="social-link" aria-label="LinkedIn de Jeiel Lima Miranda">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                </a>
-                <a href="https://github.com/Jetrom17" target="_blank" class="social-link" aria-label="GitHub de Jeiel Lima Miranda">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                </a>
-                <a href="https://t.me/Jeiel_0rbit" target="_blank" class="social-link" aria-label="Telegram de Jeiel Lima Miranda">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 3L3 10.5l7.5 2.5L19.5 5.5l-9 8.5v6l3.5-3.5 4.5 3.5 3-17z"></path>
-                    </svg>
-                </a>
+    <div class="container">
+        <div class="card profile-card p-4">
+            <!-- Cabeçalho -->
+            <h1 class="text-center mb-4">
+                <span class="emoji">👋</span> Bem-vindo(a) ao meu perfil!
+            </h1>
+            <div class="text-center mb-4">
+                <img src="https://jeiel.pages.dev/jeiel.png" alt="Foto de Jeiel Lima Miranda" class="profile-img">
             </div>
-            <button class="contact-btn" aria-label="Entrar em contato com Jeiel Lima Miranda">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-                Contatar (em breve)
-            </button>
-        </div>
-    </main>
+            <p class="text-center">
+                Eu sou <strong>Jeiel Lima Miranda</strong>, especialista em <strong>Segurança Digital</strong> com foco em <strong>Ethical Hacking</strong>, <strong>DevOps</strong> e <strong>SOC Analyst</strong>. Aqui você encontrará projetos e soluções voltados para proteger o mundo digital.
+            </p>
 
-    <!-- Dados estruturados JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Jeiel Lima Miranda",
-        "jobTitle": "Especialista em Segurança Digital",
-        "description": "Profissional especializado em Ethical Hacking, DevOps e SOC Analyst, oferecendo soluções em cibersegurança no Brasil.",
-        "url": "https://jeielmiranda.is-a.dev/",
-        "image": "https://jeiel.pages.dev/jeiel.png",
-        "sameAs": [
-            "https://linkedin.com/in/jeiel-lima-miranda",
-            "https://github.com/Jetrom17",
-            "https://t.me/Jeiel_0rbit"
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "BR"
-        }
-    }
-    </script>
+            <!-- Quem Sou Eu -->
+            <h2 class="mt-5"><span class="emoji">🔒</span> Quem Sou Eu?</h2>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Especialista em:</strong> Cibersegurança e automação</li>
+                <li class="list-group-item"><strong>Paixão:</strong> Tornar sistemas mais seguros e resilientes</li>
+                <li class="list-group-item"><strong>Local:</strong> Brasil</li>
+                <li class="list-group-item"><strong>Missão:</strong> Combinar tecnologia e criatividade para enfrentar ameaças digitais</li>
+            </ul>
+
+            <!-- O Que Faço -->
+            <h2 class="mt-5"><span class="emoji">🛠️</span> O Que Faço</h2>
+            <table class="table table-striped mb-4">
+                <thead>
+                    <tr>
+                        <th scope="col">Área</th>
+                        <th scope="col">Foco Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ethical Hacking</strong></td>
+                        <td>Testes de penetração e segurança proativa</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DevOps</strong></td>
+                        <td>Automação e infraestrutura como código</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SOC Analyst</strong></td>
+                        <td>Monitoramento e resposta a incidentes</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Conecte-se Comigo -->
+            <h2 class="mt-5"><span class="emoji">🌐</span> Conecte-se Comigo</h2>
+            <ul class="list-unstyled mb-4">
+                <li>
+                    <a href="https://jeiel.pages.dev" target="_blank" class="btn btn-primary btn-sm mb-2">Cloudflare Pages</a> - Veja meus projetos em ação
+                </li>
+            </ul>
+
+            <!-- Entre em Contato -->
+            <h2 class="mt-5"><span class="emoji">📬</span> Entre em Contato</h2>
+            <p>Interessado em colaborar ou discutir segurança digital? Fique à vontade para me contatar!</p>
+            <p><a href="mailto:kotdwc012@mozmail.com" class="btn btn-outline-dark">kotdwc012@mozmail.com</a></p>
+
+            <!-- Citação e Rodapé -->
+            <blockquote class="blockquote text-center mt-5">
+                <p>"A cibersegurança é a arte de proteger o invisível."</p>
+            </blockquote>
+            <p class="text-center text-muted">Última atualização: 18 de março de 2025</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
