@@ -1,114 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Quem é Jeiel Lima Miranda?">
-    <meta name="keywords" content="Jeiel, Jeiel Miranda, Jeiel Lima Miranda">
+    <meta name="description" content="Quem é Jeiel Miranda?">
+    <meta name="keywords" content="Jeiel Miranda, Jeiel Lima Miranda">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Jeiel Miranda">
-    <title>Jeiel Lima Miranda | Perfil</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Estilos personalizados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Jeiel Lima Miranda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs 
+   
+/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            min-height: 100vh;
-            padding: 2rem 0;
+        /* Estilo Neon LED com animação */
+        .neon-card {
+            background: #1a1a1a;
+            border: 2px solid #00ffcc;
+            animation: neonGlow 3s infinite alternate;
         }
-        .profile-card {
-            max-width: 600px;
-            margin: auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        @keyframes neonGlow {
+            0% {
+                box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+                border-color: #00ffcc; /* Ciano */
+            }
+            50% {
+                box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+                border-color: #ff00ff; /* Magenta */
+            }
+            100% {
+                box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+                border-color: #00ff00; /* Verde Neon */
+            }
         }
-        .profile-img {
-            width: 150px;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        .neon-text {
+            color: #fff;
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
         }
-        .emoji {
-            font-size: 1.5rem;
-            margin-right: 0.5rem;
-        }
-        blockquote {
-            font-style: italic;
-            color: #6c757d;
+        .neon-icon {
+            color: #00ffcc;
+            text-shadow: 0 0 5px #00ffcc;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="card profile-card p-4">
-            <!-- Cabeçalho -->
-            <h1 class="text-center mb-4">
-                <span class="emoji">👋</span> Bem-vindo(a) ao meu perfil!
-            </h1>
-            <div class="text-center mb-4">
-                <img src="https://jeiel.pages.dev/jeiel.png" alt="Foto de Jeiel Lima Miranda" class="profile-img">
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <div class="neon-card rounded-lg p-6 w-full max-w-md">
+        <!-- Header do Card -->
+        <div class="flex items-center space-x-4">
+            <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-cyan-400 shadow-lg">
+            <img src="https://jeiel.pages.dev/jeiel.png" alt="Foto de Jeiel Lima Miranda" class="w-full h-full object-cover rounded-full">
             </div>
-            <p class="text-center">
-                Eu sou <strong>Jeiel Lima Miranda</strong>, especialista em <strong>Segurança Digital</strong> com foco em <strong>Ethical Hacking</strong>, <strong>DevOps</strong> e <strong>SOC Analyst</strong>. Aqui você encontrará projetos e soluções voltados para proteger o mundo digital.
-            </p>
+            <div>
+                <h1 class="text-2xl font-bold neon-text">Jeiel Lima Miranda</h1>
+                <p class="text-cyan-300">21 anos / 21 years old</p>
+            </div>
+        </div>
 
-            <!-- Quem Sou Eu -->
-            <h2 class="mt-5"><span class="emoji">🔒</span> Quem Sou Eu?</h2>
-            <ul class="list-group list-group-flush mb-4">
-                <li class="list-group-item"><strong>Especialista em:</strong> Cibersegurança e automação</li>
-                <li class="list-group-item"><strong>Paixão:</strong> Tornar sistemas mais seguros e resilientes</li>
-                <li class="list-group-item"><strong>Local:</strong> Brasil</li>
-                <li class="list-group-item"><strong>Missão:</strong> Combinar tecnologia e criatividade para enfrentar ameaças digitais</li>
+        <!-- Seção de Sobre -->
+        <div class="mt-6" id="about-section">
+            <!-- Conteúdo será preenchido por JavaScript -->
+        </div>
+
+        <!-- Habilidades -->
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold neon-text flex items-center">
+                <i class="fas fa-tools mr-2 neon-icon"></i> Habilidades / Skills
+            </h2>
+            <ul class="mt-2 space-y-2 text-cyan-300">
+                <li><i class="fas fa-shield-alt mr-2 neon-icon"></i> Segurança Digital / Digital Security</li>
+                <li><i class="fas fa-code mr-2 neon-icon"></i> DevOps & Pentest</li>
+                <li><i class="fas fa-search mr-2 neon-icon"></i> OSINT</li>
+                <li><i class="fas fa-laptop-code mr-2 neon-icon"></i> Front-end & GUI Development</li>
+                <li><i class="fas fa-exclamation-triangle mr-2 neon-icon"></i> Denúncia de Phishing / Phishing Reporting</li>
             </ul>
-
-            <!-- O Que Faço -->
-            <h2 class="mt-5"><span class="emoji">🛠️</span> O Que Faço</h2>
-            <table class="table table-striped mb-4">
-                <thead>
-                    <tr>
-                        <th scope="col">Área</th>
-                        <th scope="col">Foco Principal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Ethical Hacking</strong></td>
-                        <td>Testes de penetração e segurança proativa</td>
-                    </tr>
-                    <tr>
-                        <td><strong>DevOps</strong></td>
-                        <td>Automação e infraestrutura como código</td>
-                    </tr>
-                    <tr>
-                        <td><strong>SOC Analyst</strong></td>
-                        <td>Monitoramento e resposta a incidentes</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- Conecte-se Comigo -->
-            <h2 class="mt-5"><span class="emoji">🌐</span> Conecte-se Comigo</h2>
-            <ul class="list-unstyled mb-4">
-                <li>
-                    <a href="https://jeiel.pages.dev" target="_blank" class="btn btn-primary btn-sm mb-2">Cloudflare Pages</a> - Veja meus projetos em ação
-                </li>
-            </ul>
-
-            <!-- Entre em Contato -->
-            <h2 class="mt-5"><span class="emoji">📬</span> Entre em Contato</h2>
-            <p>Interessado em colaborar ou discutir segurança digital? Fique à vontade para me contatar!</p>
-            <p><a href="mailto:kotdwc012@mozmail.com" class="btn btn-outline-dark">kotdwc012@mozmail.com</a></p>
-
-            <!-- Citação e Rodapé -->
-            <blockquote class="blockquote text-center mt-5">
-                <p>"A cibersegurança é a arte de proteger o invisível."</p>
-            </blockquote>
-            <p class="text-center text-muted">Última atualização: 18 de março de 2025</p>
         </div>
     </div>
 
-    <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Detectar idioma do navegador
+        const userLang = navigator.language || navigator.userLanguage;
+        const aboutSection = document.getElementById('about-section');
+
+        // Conteúdo em português
+        const ptContent = `
+            <h2 class="text-xl font-semibold neon-text flex items-center">
+                <i class="fas fa-globe-americas mr-2 neon-icon"></i> Sobre Mim
+            </h2>
+            <p class="text-cyan-300 mt-2">
+                Especializado em Segurança Digital pela UNAMA, com formação em DevOps, OSINT e pentest. Sou desenvolvedor/programador de front-end e interfaces GUI. Atuo denunciando sites fraudulentos, como phishing, para proteger usuários online.
+            </p>
+        `;
+
+        // Conteúdo em inglês
+        const enContent = `
+            <h2 class="text-xl font-semibold neon-text flex items-center">
+                <i class="fas fa-globe mr-2 neon-icon"></i> About Me
+            </h2>
+            <p class="text-cyan-300 mt-2">
+                Specialized in Digital Security from UNAMA, with training in DevOps, OSINT, and pentesting. I am a front-end developer/programmer and GUI designer. I work on reporting fraudulent websites, such as phishing, to protect online users.
+            </p>
+        `;
+
+        // Exibir conteúdo baseado no idioma (português por padrão, inglês se diferente)
+        if (userLang.startsWith('pt')) {
+            aboutSection.innerHTML = ptContent;
+        } else {
+            aboutSection.innerHTML = enContent;
+        }
+    </script>
+    <script>
+  setTimeout(function() {
+    window.location.href = "https://jeiel.pages.dev";
+}, 7000);
+  </script>
 </body>
 </html>
