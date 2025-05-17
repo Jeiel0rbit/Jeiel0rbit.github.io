@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Quem é Jeiel Miranda?">
@@ -7,113 +7,288 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Jeiel Miranda">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil - Jeiel Lima Miranda</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome CDN para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs 
-   
-/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Perfil de Desenvolvedor - Jeiel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilo Neon LED com animação */
-        .neon-card {
-            background: #1a1a1a;
-            border: 2px solid #00ffcc;
-            animation: neonGlow 3s infinite alternate;
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #064e3b 0%, #1e293b 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+            box-sizing: border-box;
+            color: #e2e8f0;
         }
-        @keyframes neonGlow {
-            0% {
-                box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
-                border-color: #00ffcc; /* Ciano */
+
+        .profile-card {
+            animation: fadeInScale 0.7s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.95);
+            position: relative;
+            overflow: hidden;
+            background-color: #1f2937;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            max-width: 24rem;
+        }
+
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
             }
-            50% {
-                box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
-                border-color: #ff00ff; /* Magenta */
+        }
+
+        .profile-image {
+            border: 3px solid #f97316;
+            box-shadow: 0 0 12px rgba(249, 115, 22, 0.4);
+            width: 6rem;
+            height: 6rem;
+        }
+        @media (min-width: 576px) {
+            .profile-image {
+                width: 6rem;
+                height: 6rem;
             }
-            100% {
-                box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
-                border-color: #00ff00; /* Verde Neon */
+        }
+
+        .text-custom-orange-400 { color: #fb923c; }
+        .text-custom-orange-300 { color: #fdba74; }
+        .text-custom-slate-300 { color: #cbd5e1; }
+
+        .tech-tag {
+            transition: all 0.2s ease-in-out;
+            cursor: default;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.625rem;
+        }
+        .tech-tag:hover {
+            transform: translateY(-1px) scale(1.03);
+        }
+        @media (min-width: 576px) {
+            .tech-tag {
+                font-size: 0.875rem;
             }
         }
-        .neon-text {
-            color: #fff;
-            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+
+        .skill-tag-custom { background-color: #10b981; color: #f0fdf4; box-shadow: 0 3px 8px rgba(16, 185, 129, 0.3); }
+        .lang-tag-custom { background-color: #059669; color: #f0fdf4; box-shadow: 0 3px 8px rgba(5, 150, 105, 0.3); }
+        .framework-tag-custom { background-color: #047857; color: #f0fdf4; box-shadow: 0 3px 8px rgba(4, 120, 87, 0.3); }
+        .tool-tag-custom { background-color: #065f46; color: #f0fdf4; box-shadow: 0 3px 8px rgba(6, 95, 70, 0.3); }
+
+        .social-icon {
+            color: #9ca3af; /* Cor base do ícone, similar ao text-slate-400 */
+            font-size: 1.5rem; /* Tamanho base do ícone, w-6/h-6 */
+            transition: transform 0.2s ease, color 0.2s ease;
         }
-        .neon-icon {
-            color: #00ffcc;
-            text-shadow: 0 0 5px #00ffcc;
+        @media (min-width: 576px) {
+            .social-icon {
+                font-size: 1.75rem; /* w-7/h-7 */
+            }
         }
+        .social-icon:hover {
+            transform: scale(1.15);
+        }
+        .social-icon-telegram:hover { color: #229ED9; }
+        .social-icon-discord:hover { color: #5865F2; }
+        .social-icon-email:hover { color: #f97316; }
+        .social-icon-github:hover { color: #c084fc; } /* Mantendo o roxo para GitHub, ou pode ser #333 */
+
+
+        .btn-custom-orange {
+            background-color: #f97316;
+            border-color: #f97316;
+            color: white;
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+        }
+        .btn-custom-orange:hover {
+            background-color: #ea580c;
+            border-color: #ea580c;
+            color: white;
+            transform: translateY(-1px) scale(1.02);
+        }
+         .btn-custom-orange:focus {
+            box-shadow: 0 0 0 0.25rem rgba(249, 115, 22, 0.5);
+        }
+
+        .progress {
+            height: 5px;
+            background-color: #334155;
+        }
+        .progress-bar-custom-orange {
+            background-color: #f97316;
+        }
+
+        .redirect-info-text {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            padding-bottom: 7px;
+        }
+        .redirect-info-text a {
+            color: #fb923c;
+            text-decoration: none;
+        }
+        .redirect-info-text a:hover {
+            text-decoration: underline;
+        }
+
+        #emailDisplay.collapsing {
+            transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+         #emailDisplay {
+            transition: opacity 0.3s ease-in-out;
+         }
     </style>
 </head>
-<body class="bg-gray-900 flex items-center justify-center min-h-screen">
-    <div class="neon-card rounded-lg p-6 w-full max-w-md">
-        <!-- Header do Card -->
-        <div class="flex items-center space-x-4">
-            <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-cyan-400 shadow-lg">
-            <img src="https://jeiel.pages.dev/assets/jeiel-DLoUMvkh.png" alt="Foto de Jeiel Lima Miranda" class="w-full h-full object-cover rounded-full">
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold neon-text">Jeiel Lima Miranda</h1>
-                <p class="text-cyan-300">21 anos / 21 years old</p>
+<body>
+    <div class="profile-card p-3 p-sm-4 w-100 mx-auto">
+        <div class="text-center">
+            <img src="https://jeiel.pages.dev/assets/jeiel-DLoUMvkh.png" alt="Foto do Perfil de Jeiel" class="profile-image rounded-circle mx-auto mb-3 object-cover">
+            <h1 class="fs-3 fs-sm-2 fw-bold text-custom-orange-400">Jeiel Lima Miranda</h1>
+            <p class="text-custom-orange-300 fs-6 fs-sm-5">Segurança Digital</p>
+        </div>
+
+        <div class="mt-3 text-center">
+            <p class="text-custom-slate-300 lh-sm fs-6 px-1 px-sm-0">
+                Meu conhecimento é comparado a uma gota no meio de um oceano.
+            </p>
+        </div>
+
+        <div class="mt-4">
+            <h2 class="fs-5 fs-sm-4 fw-semibold text-custom-orange-400 mb-3 text-center">Habilidades</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="tech-tag skill-tag-custom rounded-pill">OSINT</span>
+                <span class="tech-tag skill-tag-custom rounded-pill">DevOps</span>
+                <span class="tech-tag skill-tag-custom rounded-pill">Pentest</span>
+                <span class="tech-tag skill-tag-custom rounded-pill">LLM</span>
+                <span class="tech-tag skill-tag-custom rounded-pill">Front End</span>
             </div>
         </div>
 
-        <!-- Seção de Sobre -->
-        <div class="mt-6" id="about-section">
-            <!-- Conteúdo será preenchido por JavaScript -->
+        <div class="mt-3">
+            <h2 class="fs-5 fs-sm-4 fw-semibold text-custom-orange-400 mb-3 text-center">Linguagens</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="tech-tag lang-tag-custom rounded-pill">Python</span>
+                <span class="tech-tag lang-tag-custom rounded-pill">JavaScript</span>
+                <span class="tech-tag lang-tag-custom rounded-pill">Go</span>
+            </div>
         </div>
 
-        <!-- Habilidades -->
-        <div class="mt-6">
-            <h2 class="text-xl font-semibold neon-text flex items-center">
-                <i class="fas fa-tools mr-2 neon-icon"></i> Habilidades / Skills
-            </h2>
-            <ul class="mt-2 space-y-2 text-cyan-300">
-                <li><i class="fas fa-shield-alt mr-2 neon-icon"></i> Segurança Digital / Digital Security</li>
-                <li><i class="fas fa-code mr-2 neon-icon"></i> DevOps & Pentest</li>
-                <li><i class="fas fa-search mr-2 neon-icon"></i> OSINT</li>
-                <li><i class="fas fa-laptop-code mr-2 neon-icon"></i> Front-end & GUI Development</li>
-                <li><i class="fas fa-exclamation-triangle mr-2 neon-icon"></i> Denúncia de Phishing / Phishing Reporting</li>
-            </ul>
+        <div class="mt-3">
+            <h2 class="fs-5 fs-sm-4 fw-semibold text-custom-orange-400 mb-3 text-center">Frameworks</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="tech-tag framework-tag-custom rounded-pill">Flask</span>
+                <span class="tech-tag framework-tag-custom rounded-pill">Next.js</span>
+                <span class="tech-tag framework-tag-custom rounded-pill">React Native</span>
+                <span class="tech-tag framework-tag-custom rounded-pill">React</span>
+                <span class="tech-tag framework-tag-custom rounded-pill">Vite</span>
+                <span class="tech-tag framework-tag-custom rounded-pill">Preact</span>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <h2 class="fs-5 fs-sm-4 fw-semibold text-custom-orange-400 mb-3 text-center">Ferramentas</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="tech-tag tool-tag-custom rounded-pill">Deno</span>
+                <span class="tech-tag tool-tag-custom rounded-pill">NPM</span>
+                <span class="tech-tag tool-tag-custom rounded-pill">Git</span>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <h2 class="fs-5 fs-sm-4 fw-semibold text-custom-orange-400 mb-3">Conecte-se</h2>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://t.me/JetByte" target="_blank" rel="noopener noreferrer" class="social-icon social-icon-telegram" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://discord.com/users/1372378728658636821" target="_blank" rel="noopener noreferrer" class="social-icon social-icon-discord" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="mailto:jeiel@duck.com" class="social-icon social-icon-email" aria-label="E-mail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Jeiel0rbit" target="_blank" rel="noopener noreferrer" class="social-icon social-icon-github" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-3 text-center">
+            <button id="showEmailBtn" class="btn btn-custom-orange rounded shadow" type="button" data-bs-toggle="collapse" data-bs-target="#emailDisplay" aria-expanded="false" aria-controls="emailDisplay">
+                Mostrar E-mail
+            </button>
+            <div class="collapse" id="emailDisplay">
+                <p class="text-custom-orange-300 mt-2 mb-0 fs-6 fs-sm-5">jeiel@duck.com</p>
+            </div>
+        </div>
+        
+        <div id="redirectInfo" class="text-center redirect-info-text mt-3 mb-1">
+            Redirecionando para <a href="https://jeiel.pages.dev">jeiel.pages.dev</a> em <span id="countdown">15</span>s...
+        </div>
+        
+        <div class="progress rounded-0" style="height: 5px;">
+            <div id="progressBar" class="progress-bar progress-bar-custom-orange" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        // Detectar idioma do navegador
-        const userLang = navigator.language || navigator.userLanguage;
-        const aboutSection = document.getElementById('about-section');
+        const showEmailBtn = document.getElementById('showEmailBtn');
+        const emailDisplayCollapse = document.getElementById('emailDisplay');
 
-        // Conteúdo em português
-        const ptContent = `
-            <h2 class="text-xl font-semibold neon-text flex items-center">
-                <i class="fas fa-globe-americas mr-2 neon-icon"></i> Sobre Mim
-            </h2>
-            <p class="text-cyan-300 mt-2">
-                Especializado em Segurança Digital pela UNAMA, com formação em DevOps, OSINT e pentest. Sou desenvolvedor/programador de front-end e interfaces GUI. Atuo denunciando sites fraudulentos, como phishing, para proteger usuários online.
-            </p>
-        `;
+        if (showEmailBtn && emailDisplayCollapse) {
+            emailDisplayCollapse.addEventListener('show.bs.collapse', function () {
+                showEmailBtn.textContent = 'Ocultar E-mail';
+            });
+            emailDisplayCollapse.addEventListener('hide.bs.collapse', function () {
+                showEmailBtn.textContent = 'Mostrar E-mail';
+            });
+        }
 
-        // Conteúdo em inglês
-        const enContent = `
-            <h2 class="text-xl font-semibold neon-text flex items-center">
-                <i class="fas fa-globe mr-2 neon-icon"></i> About Me
-            </h2>
-            <p class="text-cyan-300 mt-2">
-                Specialized in Digital Security from UNAMA, with training in DevOps, OSINT, and pentesting. I am a front-end developer/programmer and GUI designer. I work on reporting fraudulent websites, such as phishing, to protect online users.
-            </p>
-        `;
+        const redirectTime = 15000;
+        const progressBar = document.getElementById('progressBar');
+        const countdownElement = document.getElementById('countdown');
+        const redirectInfoElement = document.getElementById('redirectInfo');
+        let timeLeft = redirectTime / 1000;
 
-        // Exibir conteúdo baseado no idioma (português por padrão, inglês se diferente)
-        if (userLang.startsWith('pt')) {
-            aboutSection.innerHTML = ptContent;
+        if (progressBar && countdownElement && redirectInfoElement) {
+            countdownElement.textContent = timeLeft;
+            const intervalTime = 100;
+            let elapsedTime = 0;
+
+            const progressInterval = setInterval(() => {
+                elapsedTime += intervalTime;
+                const progressPercentage = (elapsedTime / redirectTime) * 100;
+                progressBar.style.width = progressPercentage + '%';
+                progressBar.setAttribute('aria-valuenow', progressPercentage);
+
+                if (elapsedTime % 1000 === 0) {
+                    timeLeft--;
+                    if (timeLeft >= 0) {
+                       countdownElement.textContent = timeLeft;
+                    }
+                }
+
+                if (elapsedTime >= redirectTime) {
+                    clearInterval(progressInterval);
+                    progressBar.style.width = '100%';
+                    progressBar.setAttribute('aria-valuenow', 100);
+                    redirectInfoElement.innerHTML = `Redirecionando agora para <a href="https://jeiel.pages.dev" class="text-custom-orange-400">jeiel.pages.dev</a>...`;
+                    window.location.href = "https://jeiel.pages.dev";
+                }
+            }, intervalTime);
         } else {
-            aboutSection.innerHTML = enContent;
+            console.warn("Elementos da barra de progresso ou contagem regressiva não encontrados. Redirecionamento simples será aplicado.");
+            setTimeout(function() {
+                window.location.href = "https://jeiel.pages.dev";
+            }, redirectTime);
         }
     </script>
-    <script>
-  setTimeout(function() {
-    window.location.href = "https://jeiel.pages.dev";
-}, 30000);
-  </script>
 </body>
 </html>
+
